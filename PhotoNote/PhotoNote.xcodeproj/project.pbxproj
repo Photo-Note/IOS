@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2B2737923BE6E31008451B0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737723BE6E31008451B0 /* Model.xcdatamodeld */; };
+		A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */; };
+		A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737C23BE6FD4008451B0 /* PhotoRepresentation.swift */; };
+		A2B2737F23BE704A008451B0 /* Model+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737E23BE704A008451B0 /* Model+Convenience.swift */; };
 		856E26BC23BE8510003FB408 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E26BB23BE8510003FB408 /* AddPhotoViewController.swift */; };
 		856E26BE23BE94DF003FB408 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E26BD23BE94DF003FB408 /* ImagePicker.swift */; };
 		85EC9E8A23BE71B40020A2CD /* TutorialStepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC9E8923BE71B40020A2CD /* TutorialStepOneViewController.swift */; };
@@ -17,6 +21,8 @@
 		DD9DD58923BE58060007508B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD58723BE58060007508B /* Main.storyboard */; };
 		DD9DD58B23BE58070007508B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD58A23BE58070007508B /* Assets.xcassets */; };
 		DD9DD58E23BE58070007508B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD58C23BE58070007508B /* LaunchScreen.storyboard */; };
+		DD9DD59B23BE5D200007508B /* FIrestoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DD59A23BE5D200007508B /* FIrestoreAPI.swift */; };
+		DD9DD59D23BE67140007508B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD59C23BE67140007508B /* GoogleService-Info.plist */; };
 		EB840595C2C37D06F0564820 /* Pods_PhotoNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11366E23EBC8726E94B454E3 /* Pods_PhotoNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +35,10 @@
 		85FB730D23BE734500A7BA0B /* TutorialStepTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepTwoViewController.swift; path = PhotoNote/TutorialStepTwoViewController.swift; sourceTree = SOURCE_ROOT; };
 		85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepThreeViewController.swift; path = PhotoNote/TutorialStepThreeViewController.swift; sourceTree = SOURCE_ROOT; };
 		8FA481BCB60422E1EB76616E /* Pods-PhotoNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoNote.release.xcconfig"; path = "Target Support Files/Pods-PhotoNote/Pods-PhotoNote.release.xcconfig"; sourceTree = "<group>"; };
+		A2B2737823BE6E31008451B0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A2B2737C23BE6FD4008451B0 /* PhotoRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepresentation.swift; sourceTree = "<group>"; };
+		A2B2737E23BE704A008451B0 /* Model+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Convenience.swift"; sourceTree = "<group>"; };
 		DD9DD57E23BE58060007508B /* PhotoNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9DD58123BE58060007508B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9DD58323BE58060007508B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +46,8 @@
 		DD9DD58A23BE58070007508B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD9DD58D23BE58070007508B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD9DD58F23BE58070007508B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9DD59A23BE5D200007508B /* FIrestoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIrestoreAPI.swift; sourceTree = "<group>"; };
+		DD9DD59C23BE67140007508B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,7 @@
 		DD9DD58023BE58060007508B /* PhotoNote */ = {
 			isa = PBXGroup;
 			children = (
+				DD9DD58F23BE58070007508B /* Info.plist */,
 				DD9DD59923BE585D0007508B /* Storyboards */,
 				DD9DD59823BE58420007508B /* Networking */,
 				DD9DD59723BE583D0007508B /* Models */,
@@ -102,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				DD9DD58F23BE58070007508B /* Info.plist */,
+				DD9DD59C23BE67140007508B /* GoogleService-Info.plist */,
 				DD9DD58323BE58060007508B /* SceneDelegate.swift */,
 				DD9DD58123BE58060007508B /* AppDelegate.swift */,
 			);
@@ -123,6 +137,10 @@
 			isa = PBXGroup;
 			children = (
 				856E26BD23BE94DF003FB408 /* ImagePicker.swift */,
+				A2B2737723BE6E31008451B0 /* Model.xcdatamodeld */,
+				A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */,
+				A2B2737C23BE6FD4008451B0 /* PhotoRepresentation.swift */,
+				A2B2737E23BE704A008451B0 /* Model+Convenience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +148,7 @@
 		DD9DD59823BE58420007508B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DD9DD59A23BE5D200007508B /* FIrestoreAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -204,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9DD58E23BE58070007508B /* LaunchScreen.storyboard in Resources */,
+				DD9DD59D23BE67140007508B /* GoogleService-Info.plist in Resources */,
 				DD9DD58B23BE58070007508B /* Assets.xcassets in Resources */,
 				DD9DD58923BE58060007508B /* Main.storyboard in Resources */,
 			);
@@ -263,6 +283,11 @@
 				DD9DD58223BE58060007508B /* AppDelegate.swift in Sources */,
 				856E26BE23BE94DF003FB408 /* ImagePicker.swift in Sources */,
 				DD9DD58423BE58060007508B /* SceneDelegate.swift in Sources */,
+				A2B2737923BE6E31008451B0 /* Model.xcdatamodeld in Sources */,
+				A2B2737F23BE704A008451B0 /* Model+Convenience.swift in Sources */,
+				A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */,
+				A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */,
+				DD9DD59B23BE5D200007508B /* FIrestoreAPI.swift in Sources */,
 				85FB730E23BE734500A7BA0B /* TutorialStepTwoViewController.swift in Sources */,
 				85FB731023BE753E00A7BA0B /* TutorialStepThreeViewController.swift in Sources */,
 			);
@@ -464,6 +489,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2B2737723BE6E31008451B0 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2B2737823BE6E31008451B0 /* Model.xcdatamodel */,
+			);
+			currentVersion = A2B2737823BE6E31008451B0 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DD9DD57623BE58060007508B /* Project object */;
 }
