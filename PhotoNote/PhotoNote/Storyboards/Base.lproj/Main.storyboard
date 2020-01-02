@@ -44,32 +44,6 @@
             </objects>
             <point key="canvasLocation" x="2228" y="143"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="ug4-Xi-TJ0">
-            <objects>
-                <viewController id="eCH-OB-fxD" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="U9y-vY-0UM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Photo VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLp-wC-fru">
-                                <rect key="frame" x="154" y="438" width="107" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="NPz-4g-KHp"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ZHz-an-IMP"/>
-                    <navigationItem key="navigationItem" id="qOo-9G-BsF"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="40b-Nm-gMM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3137.68115942029" y="869.19642857142856"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ygq-tw-BiV">
             <objects>
@@ -127,6 +101,40 @@
             </objects>
             <point key="canvasLocation" x="3046" y="143"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="5v6-ru-Afw">
+            <objects>
+                <viewController id="8n9-14-J1L" customClass="AddPhotoViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0yk-cR-Yu0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-9a-zAW">
+                                <rect key="frame" x="0.0" y="125" width="414" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-NA-7Hr">
+                                <rect key="frame" x="170" y="304" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Image"/>
+                                <connections>
+                                    <action selector="showImagePicker:" destination="8n9-14-J1L" eventType="touchUpInside" id="MLN-9O-hdY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="KRy-7f-t7e"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="JNV-pt-Hho"/>
+                    <navigationItem key="navigationItem" id="20I-00-Ecc"/>
+                    <connections>
+                        <outlet property="imageView" destination="ZQi-9a-zAW" id="qB0-Ay-sop"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRh-cK-E4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3879.7101449275365" y="923.4375"/>
+        </scene>
         <!--Skip-->
         <scene sceneID="Z8P-q6-o8p">
             <objects>
@@ -167,7 +175,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create a PhotoNote!"/>
                                 <connections>
-                                    <segue destination="xjI-37-aLz" kind="show" id="Gw2-Gm-rUm"/>
+                                    <segue destination="8n9-14-J1L" kind="show" id="r1t-cU-arV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -188,22 +196,24 @@
             <point key="canvasLocation" x="3881" y="143"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="Uc1-ss-6e6">
+        <scene sceneID="33w-C2-DjE">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xjI-37-aLz" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xB2-KV-00W" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="ho6-fM-q0w"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oKv-EO-kju">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ret-Xh-Rgy">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="eCH-OB-fxD" kind="relationship" relationship="viewControllers" id="alz-33-Z4e"/>
+                        <segue destination="8n9-14-J1L" kind="relationship" relationship="viewControllers" id="3ZN-2b-B3d"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YFM-vU-naH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ocx-Fw-Azt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2227.536231884058" y="869.19642857142856"/>
+            <point key="canvasLocation" x="3001" y="924"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3ZN-2b-B3d"/>
+    </inferredMetricsTieBreakers>
 </document>
