@@ -109,18 +109,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="109" translatesAutoresizingMaskIntoConstraints="NO" id="vwk-j3-g03">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="vwk-j3-g03">
                                 <rect key="frame" x="10" y="64" width="394" height="729"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-9a-zAW">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="499"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="451"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-NA-7Hr">
-                                        <rect key="frame" x="160" y="608" width="74" height="121"/>
+                                        <rect key="frame" x="0.0" y="491" width="394" height="168"/>
                                         <state key="normal" title="Add Image"/>
                                         <connections>
                                             <action selector="showImagePicker:" destination="8n9-14-J1L" eventType="touchUpInside" id="MLN-9O-hdY"/>
                                         </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTi-uF-QcH">
+                                        <rect key="frame" x="0.0" y="699" width="394" height="30"/>
+                                        <state key="normal" title="Continue"/>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -137,6 +141,8 @@
                     <tabBarItem key="tabBarItem" title="Item" id="JNV-pt-Hho"/>
                     <navigationItem key="navigationItem" id="20I-00-Ecc"/>
                     <connections>
+                        <outlet property="addImageButton" destination="rtt-NA-7Hr" id="jQE-8D-gY1"/>
+                        <outlet property="continueButton" destination="iTi-uF-QcH" id="f00-6t-xNB"/>
                         <outlet property="imageView" destination="ZQi-9a-zAW" id="qB0-Ay-sop"/>
                     </connections>
                 </viewController>

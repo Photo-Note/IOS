@@ -11,6 +11,8 @@ import UIKit
 class AddPhotoViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var addImageButton: UIButton!
+    @IBOutlet weak var continueButton: UIButton!
     
     var imagePicker: ImagePicker!
     
@@ -18,6 +20,7 @@ class AddPhotoViewController: UIViewController {
         super.viewDidLoad()
 
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
+        
     }
     
     @IBAction func showImagePicker(_ sender: UIButton) {
