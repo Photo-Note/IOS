@@ -7,15 +7,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tutorial Step One View Controller-->
         <scene sceneID="ava-N2-ccp">
             <objects>
-                <viewController id="Za5-fL-OLd" sceneMemberID="viewController">
+                <viewController id="Za5-fL-OLd" customClass="TutorialStepOneViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Jn-59-tHY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take/Upload Photo Step One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBY-ga-T21">
+                                <rect key="frame" x="96.5" y="393.5" width="221" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="IBY-ga-T21" firstAttribute="centerY" secondItem="9Jn-59-tHY" secondAttribute="centerY" id="EyE-sI-1FV"/>
+                            <constraint firstItem="IBY-ga-T21" firstAttribute="centerX" secondItem="9Jn-59-tHY" secondAttribute="centerX" id="vy4-Ak-q2Q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7Eu-ru-6aa"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Tdr-I2-Xvd" appends="YES" id="Cgg-nk-12e"/>
@@ -38,6 +50,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vYp-Q0-A1a" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rw2-dy-OK3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -49,32 +62,44 @@
             </objects>
             <point key="canvasLocation" x="405.79710144927537" y="142.63392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutorial Step Two View Controller-->
         <scene sceneID="HX6-U3-BYz">
             <objects>
-                <viewController wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" id="www-yQ-9zq" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" id="www-yQ-9zq" customClass="TutorialStepTwoViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NJm-n6-CwE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7d-37-J9O">
-                                <rect key="frame" x="204" y="359" width="14" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Down or Left Step Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNe-HZ-dtC">
+                                <rect key="frame" x="94.5" y="437.5" width="225" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="GNe-HZ-dtC" firstAttribute="centerY" secondItem="NJm-n6-CwE" secondAttribute="centerY" id="5Iy-hd-nYN"/>
+                            <constraint firstItem="GNe-HZ-dtC" firstAttribute="centerX" secondItem="NJm-n6-CwE" secondAttribute="centerX" id="Hu4-Su-lLn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ddc-Ou-SND"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="tVG-bW-Ke0" appends="YES" id="RhZ-6U-Jbs"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="4je-gL-nfe"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kP4-UW-YTs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="tVG-bW-Ke0">
+                    <connections>
+                        <segue destination="u0n-ed-N7W" kind="show" id="DM6-cY-p03"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3307" y="143"/>
+            <point key="canvasLocation" x="3046" y="143"/>
         </scene>
         <!--Skip-->
         <scene sceneID="Z8P-q6-o8p">
@@ -83,9 +108,10 @@
                     <tabBarItem key="tabBarItem" title="Skip" id="3dH-yM-Jhs"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ddp-js-opW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Ddp-js-opW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -95,6 +121,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zey-Fv-3Ml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1314.4927536231885" y="142.63392857142856"/>
+        </scene>
+        <!--Tutorial Step Three View Controller-->
+        <scene sceneID="S3b-qg-wMN">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" id="u0n-ed-N7W" customClass="TutorialStepThreeViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GTM-Ym-SIi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add, Edit, and Save! Step 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhV-9B-Cvc">
+                                <rect key="frame" x="103" y="437.5" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="jhV-9B-Cvc" firstAttribute="centerY" secondItem="GTM-Ym-SIi" secondAttribute="centerY" id="fI5-V6-cEM"/>
+                            <constraint firstItem="jhV-9B-Cvc" firstAttribute="centerX" secondItem="GTM-Ym-SIi" secondAttribute="centerX" id="gny-ye-cEg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c4C-et-YmU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dWg-AL-rOg"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KHG-sQ-J5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3881" y="143"/>
         </scene>
     </scenes>
 </document>

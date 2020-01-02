@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85EC9E8A23BE71B40020A2CD /* TutorialStepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC9E8923BE71B40020A2CD /* TutorialStepOneViewController.swift */; };
+		85FB730E23BE734500A7BA0B /* TutorialStepTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB730D23BE734500A7BA0B /* TutorialStepTwoViewController.swift */; };
+		85FB731023BE753E00A7BA0B /* TutorialStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */; };
 		DD9DD58223BE58060007508B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DD58123BE58060007508B /* AppDelegate.swift */; };
 		DD9DD58423BE58060007508B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DD58323BE58060007508B /* SceneDelegate.swift */; };
 		DD9DD58923BE58060007508B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD58723BE58060007508B /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* Begin PBXFileReference section */
 		11366E23EBC8726E94B454E3 /* Pods_PhotoNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12AD28CD6D94BFD46324B646 /* Pods-PhotoNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoNote.debug.xcconfig"; path = "Target Support Files/Pods-PhotoNote/Pods-PhotoNote.debug.xcconfig"; sourceTree = "<group>"; };
+		85EC9E8923BE71B40020A2CD /* TutorialStepOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepOneViewController.swift; path = PhotoNote/TutorialStepOneViewController.swift; sourceTree = SOURCE_ROOT; };
+		85FB730D23BE734500A7BA0B /* TutorialStepTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepTwoViewController.swift; path = PhotoNote/TutorialStepTwoViewController.swift; sourceTree = SOURCE_ROOT; };
+		85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepThreeViewController.swift; path = PhotoNote/TutorialStepThreeViewController.swift; sourceTree = SOURCE_ROOT; };
 		8FA481BCB60422E1EB76616E /* Pods-PhotoNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoNote.release.xcconfig"; path = "Target Support Files/Pods-PhotoNote/Pods-PhotoNote.release.xcconfig"; sourceTree = "<group>"; };
 		DD9DD57E23BE58060007508B /* PhotoNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9DD58123BE58060007508B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +60,6 @@
 				12AD28CD6D94BFD46324B646 /* Pods-PhotoNote.debug.xcconfig */,
 				8FA481BCB60422E1EB76616E /* Pods-PhotoNote.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -102,6 +107,9 @@
 		DD9DD59623BE58350007508B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				85EC9E8923BE71B40020A2CD /* TutorialStepOneViewController.swift */,
+				85FB730D23BE734500A7BA0B /* TutorialStepTwoViewController.swift */,
+				85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -244,8 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EC9E8A23BE71B40020A2CD /* TutorialStepOneViewController.swift in Sources */,
 				DD9DD58223BE58060007508B /* AppDelegate.swift in Sources */,
 				DD9DD58423BE58060007508B /* SceneDelegate.swift in Sources */,
+				85FB730E23BE734500A7BA0B /* TutorialStepTwoViewController.swift in Sources */,
+				85FB731023BE753E00A7BA0B /* TutorialStepThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HG3WUJ8982;
+				DEVELOPMENT_TEAM = UF4PHTK7P6;
 				INFOPLIST_FILE = PhotoNote/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,7 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HG3WUJ8982;
+				DEVELOPMENT_TEAM = UF4PHTK7P6;
 				INFOPLIST_FILE = PhotoNote/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
