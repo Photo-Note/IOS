@@ -8,15 +8,18 @@
 
 import Foundation
 import Firebase
+import FirebaseFirestoreSwift
+import FirebaseFirestore
 
 class FIrestoreAPI {
     
     static var user: User?
+    let db = Firestore.firestore()
     
     func signin(withEmail email: String,password: String){
         Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
             if let error = error as NSError? {
-                NSLog("login unsuccesful: \(error.localizedDescription)")
+                NSLog("login unsuccessful: \(error.localizedDescription)")
             }
             FIrestoreAPI.user = authResult?.user
         }
@@ -25,7 +28,7 @@ class FIrestoreAPI {
     func register(withEmail email: String, password: String){
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             if let error = error as NSError? {
-                NSLog("login unsuccesful: \(error.localizedDescription)")
+                NSLog("login unsuccessful: \(error.localizedDescription)")
             }
             FIrestoreAPI.user = authResult?.user
         }
@@ -70,6 +73,23 @@ class FIrestoreAPI {
             if let error = error as NSError? {
                                       NSLog("failed to send password reset email: \(error.localizedDescription)")
                                   }
+        }
+    }
+
+    func createProfile(withFirstName firstName: String, lastname: String) {
+        db.collection("users").addDocument(data: ["firstname": firstName,
+                                                  "lastname": lastname]) { (error) in
+            if let error = error as NSError? {
+                NSLog("failed to add document: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func getProfile() {
+        db.collection("users").getDocuments { (querySnapshot, error) in
+            if let error = error as NSError? {
+                NSLog("failed to retreive profile: \(error.localizedDescription)")
+            }
         }
     }
 }
