@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A2B2737923BE6E31008451B0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737723BE6E31008451B0 /* Model.xcdatamodeld */; };
+		A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */; };
+		A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737C23BE6FD4008451B0 /* PhotoRepresentation.swift */; };
+		A2B2737F23BE704A008451B0 /* Model+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737E23BE704A008451B0 /* Model+Convenience.swift */; };
 		DD9DD58223BE58060007508B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DD58123BE58060007508B /* AppDelegate.swift */; };
 		DD9DD58423BE58060007508B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DD58323BE58060007508B /* SceneDelegate.swift */; };
 		DD9DD58923BE58060007508B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD58723BE58060007508B /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 		12AD28CD6D94BFD46324B646 /* Pods-PhotoNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoNote.debug.xcconfig"; path = "Target Support Files/Pods-PhotoNote/Pods-PhotoNote.debug.xcconfig"; sourceTree = "<group>"; };
 		8FA481BCB60422E1EB76616E /* Pods-PhotoNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoNote.release.xcconfig"; path = "Target Support Files/Pods-PhotoNote/Pods-PhotoNote.release.xcconfig"; sourceTree = "<group>"; };
 		A2B2737823BE6E31008451B0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		A2B2737C23BE6FD4008451B0 /* PhotoRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepresentation.swift; sourceTree = "<group>"; };
+		A2B2737E23BE704A008451B0 /* Model+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Convenience.swift"; sourceTree = "<group>"; };
 		DD9DD57E23BE58060007508B /* PhotoNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9DD58123BE58060007508B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9DD58323BE58060007508B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				A2B2737723BE6E31008451B0 /* Model.xcdatamodeld */,
+				A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */,
+				A2B2737C23BE6FD4008451B0 /* PhotoRepresentation.swift */,
+				A2B2737E23BE704A008451B0 /* Model+Convenience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,6 +258,9 @@
 				DD9DD58223BE58060007508B /* AppDelegate.swift in Sources */,
 				DD9DD58423BE58060007508B /* SceneDelegate.swift in Sources */,
 				A2B2737923BE6E31008451B0 /* Model.xcdatamodeld in Sources */,
+				A2B2737F23BE704A008451B0 /* Model+Convenience.swift in Sources */,
+				A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */,
+				A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
