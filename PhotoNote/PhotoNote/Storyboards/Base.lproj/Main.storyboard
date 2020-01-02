@@ -109,20 +109,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-9a-zAW">
-                                <rect key="frame" x="0.0" y="125" width="414" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-NA-7Hr">
-                                <rect key="frame" x="170" y="304" width="74" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Image"/>
-                                <connections>
-                                    <action selector="showImagePicker:" destination="8n9-14-J1L" eventType="touchUpInside" id="MLN-9O-hdY"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="109" translatesAutoresizingMaskIntoConstraints="NO" id="vwk-j3-g03">
+                                <rect key="frame" x="10" y="64" width="394" height="729"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-9a-zAW">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="499"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-NA-7Hr">
+                                        <rect key="frame" x="160" y="608" width="74" height="121"/>
+                                        <state key="normal" title="Add Image"/>
+                                        <connections>
+                                            <action selector="showImagePicker:" destination="8n9-14-J1L" eventType="touchUpInside" id="MLN-9O-hdY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vwk-j3-g03" firstAttribute="top" secondItem="KRy-7f-t7e" secondAttribute="top" constant="20" id="Kbd-kk-sbK"/>
+                            <constraint firstItem="KRy-7f-t7e" firstAttribute="bottom" secondItem="vwk-j3-g03" secondAttribute="bottom" constant="20" id="fhZ-Hv-gt8"/>
+                            <constraint firstItem="vwk-j3-g03" firstAttribute="leading" secondItem="KRy-7f-t7e" secondAttribute="leading" constant="10" id="svf-aC-j0H"/>
+                            <constraint firstItem="KRy-7f-t7e" firstAttribute="trailing" secondItem="vwk-j3-g03" secondAttribute="trailing" constant="10" id="zhO-ia-biw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KRy-7f-t7e"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="JNV-pt-Hho"/>
