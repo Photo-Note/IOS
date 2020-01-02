@@ -86,6 +86,7 @@
 		DD9DD58023BE58060007508B /* PhotoNote */ = {
 			isa = PBXGroup;
 			children = (
+				DD9DD58F23BE58070007508B /* Info.plist */,
 				DD9DD59923BE585D0007508B /* Storyboards */,
 				DD9DD59823BE58420007508B /* Networking */,
 				DD9DD59723BE583D0007508B /* Models */,
@@ -99,7 +100,6 @@
 		DD9DD59523BE58290007508B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DD9DD58F23BE58070007508B /* Info.plist */,
 				DD9DD58323BE58060007508B /* SceneDelegate.swift */,
 				DD9DD58123BE58060007508B /* AppDelegate.swift */,
 			);
