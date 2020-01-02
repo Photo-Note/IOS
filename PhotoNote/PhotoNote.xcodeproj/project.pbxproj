@@ -16,6 +16,8 @@
 		DD9DD58923BE58060007508B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD58723BE58060007508B /* Main.storyboard */; };
 		DD9DD58B23BE58070007508B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD58A23BE58070007508B /* Assets.xcassets */; };
 		DD9DD58E23BE58070007508B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD58C23BE58070007508B /* LaunchScreen.storyboard */; };
+		DD9DD59B23BE5D200007508B /* FIrestoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DD59A23BE5D200007508B /* FIrestoreAPI.swift */; };
+		DD9DD59D23BE67140007508B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD59C23BE67140007508B /* GoogleService-Info.plist */; };
 		EB840595C2C37D06F0564820 /* Pods_PhotoNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11366E23EBC8726E94B454E3 /* Pods_PhotoNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +36,8 @@
 		DD9DD58A23BE58070007508B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD9DD58D23BE58070007508B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD9DD58F23BE58070007508B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD9DD59A23BE5D200007508B /* FIrestoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIrestoreAPI.swift; sourceTree = "<group>"; };
+		DD9DD59C23BE67140007508B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 		DD9DD59523BE58290007508B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DD9DD58F23BE58070007508B /* Info.plist */,
+				DD9DD59C23BE67140007508B /* GoogleService-Info.plist */,
 				DD9DD58323BE58060007508B /* SceneDelegate.swift */,
 				DD9DD58123BE58060007508B /* AppDelegate.swift */,
 			);
@@ -127,6 +133,7 @@
 		DD9DD59823BE58420007508B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DD9DD59A23BE5D200007508B /* FIrestoreAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -201,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD9DD58E23BE58070007508B /* LaunchScreen.storyboard in Resources */,
+				DD9DD59D23BE67140007508B /* GoogleService-Info.plist in Resources */,
 				DD9DD58B23BE58070007508B /* Assets.xcassets in Resources */,
 				DD9DD58923BE58060007508B /* Main.storyboard in Resources */,
 			);
@@ -261,6 +269,7 @@
 				A2B2737F23BE704A008451B0 /* Model+Convenience.swift in Sources */,
 				A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */,
 				A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */,
+				DD9DD59B23BE5D200007508B /* FIrestoreAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
