@@ -12,6 +12,10 @@
 		85EC9E8A23BE71B40020A2CD /* TutorialStepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC9E8923BE71B40020A2CD /* TutorialStepOneViewController.swift */; };
 		85FB730E23BE734500A7BA0B /* TutorialStepTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB730D23BE734500A7BA0B /* TutorialStepTwoViewController.swift */; };
 		85FB731023BE753E00A7BA0B /* TutorialStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */; };
+		A2B2737923BE6E31008451B0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737723BE6E31008451B0 /* Model.xcdatamodeld */; };
+		A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */; };
+		A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737C23BE6FD4008451B0 /* PhotoRepresentation.swift */; };
+		A2B2737F23BE704A008451B0 /* Model+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737E23BE704A008451B0 /* Model+Convenience.swift */; };
 		A23316F823BEBBC400004D74 /* PhotoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23316F723BEBBC400004D74 /* PhotoDetail.storyboard */; };
 		A2B2737923BE6E31008451B0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737723BE6E31008451B0 /* Model.xcdatamodeld */; };
 		A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */; };
@@ -24,6 +28,8 @@
 		DD9DD58E23BE58070007508B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD58C23BE58070007508B /* LaunchScreen.storyboard */; };
 		DD9DD59B23BE5D200007508B /* FIrestoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DD59A23BE5D200007508B /* FIrestoreAPI.swift */; };
 		DD9DD59D23BE67140007508B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD59C23BE67140007508B /* GoogleService-Info.plist */; };
+		DDC2EF1623BEDCB700DFD034 /* UimageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC2EF1523BEDCB700DFD034 /* UimageExtension.swift */; };
+		DDC2EF1823BEDD7E00DFD034 /* PhotoCustomization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC2EF1723BEDD7E00DFD034 /* PhotoCustomization.storyboard */; };
 		EB840595C2C37D06F0564820 /* Pods_PhotoNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11366E23EBC8726E94B454E3 /* Pods_PhotoNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +56,8 @@
 		DD9DD58F23BE58070007508B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD9DD59A23BE5D200007508B /* FIrestoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIrestoreAPI.swift; sourceTree = "<group>"; };
 		DD9DD59C23BE67140007508B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDC2EF1523BEDCB700DFD034 /* UimageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UimageExtension.swift; sourceTree = "<group>"; };
+		DDC2EF1723BEDD7E00DFD034 /* PhotoCustomization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoCustomization.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				DD9DD58F23BE58070007508B /* Info.plist */,
+				DDC2EF1423BEDC6500DFD034 /* extentions */,
 				DD9DD59923BE585D0007508B /* Storyboards */,
 				DD9DD59823BE58420007508B /* Networking */,
 				DD9DD59723BE583D0007508B /* Models */,
@@ -159,9 +168,18 @@
 			children = (
 				DD9DD58C23BE58070007508B /* LaunchScreen.storyboard */,
 				DD9DD58723BE58060007508B /* Main.storyboard */,
+				DDC2EF1723BEDD7E00DFD034 /* PhotoCustomization.storyboard */,
 				A23316F723BEBBC400004D74 /* PhotoDetail.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DDC2EF1423BEDC6500DFD034 /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+				DDC2EF1523BEDCB700DFD034 /* UimageExtension.swift */,
+			);
+			path = extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +244,7 @@
 			files = (
 				A23316F823BEBBC400004D74 /* PhotoDetail.storyboard in Resources */,
 				DD9DD58E23BE58070007508B /* LaunchScreen.storyboard in Resources */,
+				DDC2EF1823BEDD7E00DFD034 /* PhotoCustomization.storyboard in Resources */,
 				DD9DD59D23BE67140007508B /* GoogleService-Info.plist in Resources */,
 				DD9DD58B23BE58070007508B /* Assets.xcassets in Resources */,
 				DD9DD58923BE58060007508B /* Main.storyboard in Resources */,
@@ -292,6 +311,7 @@
 				A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */,
 				DD9DD59B23BE5D200007508B /* FIrestoreAPI.swift in Sources */,
 				85FB730E23BE734500A7BA0B /* TutorialStepTwoViewController.swift in Sources */,
+				DDC2EF1623BEDCB700DFD034 /* UimageExtension.swift in Sources */,
 				85FB731023BE753E00A7BA0B /* TutorialStepThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,8 +458,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UF4PHTK7P6;
-				INFOPLIST_FILE = PhotoNote/Resources/Info.plist;
+				DEVELOPMENT_TEAM = HG3WUJ8982;
+				INFOPLIST_FILE = PhotoNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,8 +477,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UF4PHTK7P6;
-				INFOPLIST_FILE = PhotoNote/Resources/Info.plist;
+				DEVELOPMENT_TEAM = HG3WUJ8982;
+				INFOPLIST_FILE = PhotoNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
