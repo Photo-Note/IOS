@@ -23,6 +23,15 @@ class AddPhotoViewController: UIViewController {
         
     }
     
+    func updateViews() {
+        
+        if imageView != nil {
+            addImageButton.setTitle("Change Image", for: .normal)
+        } else {
+            addImageButton.setTitle("Select Image", for: .normal)
+        }
+    }
+    
     @IBAction func showImagePicker(_ sender: UIButton) {
          self.imagePicker.present(from: sender)
     }
@@ -31,5 +40,7 @@ class AddPhotoViewController: UIViewController {
 extension AddPhotoViewController: ImagePickerDelegate {
     func didSelect(image: UIImage?) {
         self.imageView.image = image
+        
+        updateViews()
     }
 }
