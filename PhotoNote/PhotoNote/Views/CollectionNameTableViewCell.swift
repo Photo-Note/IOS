@@ -9,6 +9,10 @@
 import UIKit
 
 class CollectionNameTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var imagePreview: UIImageView!
+    @IBOutlet weak var collectionNameLabel: UILabel!
+    
 
     // Here we need to pull the collectionName from the photo at this indexPath and assign the photo's collectionName
     // Add toggle checkmark to assign/remove the collectionName to the photo before saving?
