@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseStorage
 
 class AddPhotoViewController: UIViewController {
     
     var photoNote: Photo?
     var photoNoteRep: PhotoRepresentation?
-
+    var firestorAPI = FIrestoreAPI()
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var addImageButton: UIButton!
     @IBOutlet weak var photoNoteText: UITextView!
@@ -50,6 +53,22 @@ class AddPhotoViewController: UIViewController {
             let note = photoNoteText.text,
             let name = photoNameTextField.text,
             !name.isEmpty else { return }
+        
+        firestorAPI.uploadPhoto(withImage: image, title: name, note: note)
+        
+        let randomID = UUID().uuidString
+        let uploadStorageRef = Storage.storage().reference(withPath: "pictures/\(randomID).jpg")
+        guard let imageData = image.jpegData(compressionQuality:0.75) else { return }
+        let uploadingData = StorageMetadata()
+        print(uploadStorageRef)
+        uploadingData.contentType = "image/jpeg"
+        uploadStorageRef.putData(imageData, metadata: uploadingData) { (downloadData, error) in
+            if let error = error as NSError? {
+            NSLog("failed to upload data: \(error)")
+            return
+            }
+        }.resume()
+    
         
 // photoNoteRep = PhotoRepresentation(name: name, partner: nil, note: note, collectionName: nil, photo: image.pngData()!)
         
