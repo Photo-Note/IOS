@@ -1,24 +1,248 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vYp-Q0-A1a">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tutorial Step One View Controller-->
+        <scene sceneID="ava-N2-ccp">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Za5-fL-OLd" customClass="TutorialStepOneViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Jn-59-tHY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take/Upload Photo Step One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBY-ga-T21">
+                                <rect key="frame" x="96.5" y="393.5" width="221" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="IBY-ga-T21" firstAttribute="centerY" secondItem="9Jn-59-tHY" secondAttribute="centerY" id="EyE-sI-1FV"/>
+                            <constraint firstItem="IBY-ga-T21" firstAttribute="centerX" secondItem="9Jn-59-tHY" secondAttribute="centerX" id="vy4-Ak-q2Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Eu-ru-6aa"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Tdr-I2-Xvd" appends="YES" id="Cgg-nk-12e"/>
+                        </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="YKR-Px-bfZ"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sU-bH-I7M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="Tdr-I2-Xvd">
+                    <connections>
+                        <segue destination="www-yQ-9zq" kind="push" id="SgU-N1-k8I"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="2228" y="143"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ygq-tw-BiV">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vYp-Q0-A1a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rw2-dy-OK3">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9AT-J0-q6c" kind="relationship" relationship="viewControllers" id="3Lp-aN-OnW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5Q-JH-QZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405.79710144927537" y="142.63392857142856"/>
+        </scene>
+        <!--Tutorial Step Two View Controller-->
+        <scene sceneID="HX6-U3-BYz">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" id="www-yQ-9zq" customClass="TutorialStepTwoViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NJm-n6-CwE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Down or Left Step Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNe-HZ-dtC">
+                                <rect key="frame" x="94.5" y="437.5" width="225" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="GNe-HZ-dtC" firstAttribute="centerY" secondItem="NJm-n6-CwE" secondAttribute="centerY" id="5Iy-hd-nYN"/>
+                            <constraint firstItem="GNe-HZ-dtC" firstAttribute="centerX" secondItem="NJm-n6-CwE" secondAttribute="centerX" id="Hu4-Su-lLn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ddc-Ou-SND"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="tVG-bW-Ke0" appends="YES" id="RhZ-6U-Jbs"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="4je-gL-nfe"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kP4-UW-YTs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="tVG-bW-Ke0">
+                    <connections>
+                        <segue destination="u0n-ed-N7W" kind="show" id="DM6-cY-p03"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3046" y="143"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="5v6-ru-Afw">
+            <objects>
+                <viewController id="8n9-14-J1L" customClass="AddPhotoViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0yk-cR-Yu0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="vwk-j3-g03">
+                                <rect key="frame" x="10" y="64" width="394" height="729"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-9a-zAW">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="451"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-NA-7Hr">
+                                        <rect key="frame" x="0.0" y="491" width="394" height="168"/>
+                                        <state key="normal" title="Add Image"/>
+                                        <connections>
+                                            <action selector="showImagePicker:" destination="8n9-14-J1L" eventType="touchUpInside" id="MLN-9O-hdY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTi-uF-QcH">
+                                        <rect key="frame" x="0.0" y="699" width="394" height="30"/>
+                                        <state key="normal" title="Continue"/>
+                                        <connections>
+                                            <segue destination="CzU-Te-Hri" kind="show" id="cL0-pc-WuG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vwk-j3-g03" firstAttribute="top" secondItem="KRy-7f-t7e" secondAttribute="top" constant="20" id="Kbd-kk-sbK"/>
+                            <constraint firstItem="KRy-7f-t7e" firstAttribute="bottom" secondItem="vwk-j3-g03" secondAttribute="bottom" constant="20" id="fhZ-Hv-gt8"/>
+                            <constraint firstItem="vwk-j3-g03" firstAttribute="leading" secondItem="KRy-7f-t7e" secondAttribute="leading" constant="10" id="svf-aC-j0H"/>
+                            <constraint firstItem="KRy-7f-t7e" firstAttribute="trailing" secondItem="vwk-j3-g03" secondAttribute="trailing" constant="10" id="zhO-ia-biw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KRy-7f-t7e"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="JNV-pt-Hho"/>
+                    <navigationItem key="navigationItem" id="20I-00-Ecc"/>
+                    <connections>
+                        <outlet property="addImageButton" destination="rtt-NA-7Hr" id="jQE-8D-gY1"/>
+                        <outlet property="continueButton" destination="iTi-uF-QcH" id="f00-6t-xNB"/>
+                        <outlet property="imageView" destination="ZQi-9a-zAW" id="qB0-Ay-sop"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRh-cK-E4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3879.7101449275365" y="923.4375"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="Z6S-oD-8dU">
+            <objects>
+                <viewControllerPlaceholder id="CzU-Te-Hri" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="U63-uF-Hfc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4Q-8j-imQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4705" y="1077"/>
+        </scene>
+        <!--Skip-->
+        <scene sceneID="Z8P-q6-o8p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9AT-J0-q6c" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Skip" id="3dH-yM-Jhs"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Ddp-js-opW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Za5-fL-OLd" kind="relationship" relationship="rootViewController" id="Dei-tK-cN9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zey-Fv-3Ml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314.4927536231885" y="142.63392857142856"/>
+        </scene>
+        <!--Tutorial Step Three View Controller-->
+        <scene sceneID="S3b-qg-wMN">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" id="u0n-ed-N7W" customClass="TutorialStepThreeViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GTM-Ym-SIi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add, Edit, and Save! Step 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhV-9B-Cvc">
+                                <rect key="frame" x="103" y="437.5" width="208" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gr0-h0-4K3">
+                                <rect key="frame" x="137" y="502" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Create a PhotoNote!"/>
+                                <connections>
+                                    <segue destination="8n9-14-J1L" kind="show" id="r1t-cU-arV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="jhV-9B-Cvc" firstAttribute="centerY" secondItem="GTM-Ym-SIi" secondAttribute="centerY" id="fI5-V6-cEM"/>
+                            <constraint firstItem="jhV-9B-Cvc" firstAttribute="centerX" secondItem="GTM-Ym-SIi" secondAttribute="centerX" id="gny-ye-cEg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c4C-et-YmU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dWg-AL-rOg"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KHG-sQ-J5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3881" y="143"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="33w-C2-DjE">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xB2-KV-00W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ret-Xh-Rgy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8n9-14-J1L" kind="relationship" relationship="viewControllers" id="3ZN-2b-B3d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ocx-Fw-Azt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3001" y="924"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3ZN-2b-B3d"/>
+    </inferredMetricsTieBreakers>
 </document>
