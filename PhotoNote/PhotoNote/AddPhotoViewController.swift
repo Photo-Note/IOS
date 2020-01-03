@@ -16,7 +16,6 @@ class AddPhotoViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var addImageButton: UIButton!
     @IBOutlet weak var photoNoteText: UITextView!
-    @IBOutlet weak var dropFlipSegmentedControl: UISegmentedControl!
     @IBOutlet weak var photoNameTextField: UITextField!
     
     var imagePicker: ImagePicker!
