@@ -109,11 +109,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-hD-iBs">
-                                <rect key="frame" x="56" y="84" width="302" height="610"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-hD-iBs">
+                                <rect key="frame" x="56" y="84" width="302" height="655"/>
                                 <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pfh-bb-VuC">
+                                        <rect key="frame" x="20" y="0.0" width="282" height="32"/>
+                                        <segments>
+                                            <segment title="Drop"/>
+                                            <segment title="Flip"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Photo Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xqh-Rp-Hr5">
+                                        <rect key="frame" x="20" y="51" width="282" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-9a-zAW">
-                                        <rect key="frame" x="2" y="0.5" width="300" height="298"/>
+                                        <rect key="frame" x="2" y="105.5" width="300" height="298"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="0.18098041373239437" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -122,7 +134,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-NA-7Hr">
-                                        <rect key="frame" x="228" y="340" width="74" height="40"/>
+                                        <rect key="frame" x="228" y="425" width="74" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="T8v-Qk-SXw"/>
@@ -134,8 +146,8 @@
                                             <action selector="showImagePicker:" destination="8n9-14-J1L" eventType="touchUpInside" id="MLN-9O-hdY"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add PhotoNote" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zdp-rY-NxD">
-                                        <rect key="frame" x="2" y="420" width="300" height="120"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add Note to Photo" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zdp-rY-NxD">
+                                        <rect key="frame" x="2" y="485" width="300" height="120"/>
                                         <color key="backgroundColor" red="0.93289887565405261" green="0.93289887565405261" blue="0.93289887565405261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="cmf-KG-Jcy"/>
@@ -145,19 +157,20 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTi-uF-QcH">
-                                        <rect key="frame" x="240" y="580" width="62" height="30"/>
+                                        <rect key="frame" x="240" y="625" width="62" height="30"/>
                                         <state key="normal" title="Continue"/>
                                         <connections>
-                                            <segue destination="CzU-Te-Hri" kind="show" id="cL0-pc-WuG"/>
-                                        </connections>
-                                        <connections>
-                                            <action selector="continueToCreateButtonTapped:" destination="8n9-14-J1L" eventType="touchUpInside" id="B7R-7I-2SU"/>
+                                            <segue destination="Egi-EQ-Red" kind="show" identifier="ToCollectionNameSegue" id="Zct-hw-NB3"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="zdp-rY-NxD" firstAttribute="leading" secondItem="IlX-hD-iBs" secondAttribute="leading" constant="2" id="39g-9c-eaW"/>
                                     <constraint firstItem="zdp-rY-NxD" firstAttribute="leading" secondItem="ZQi-9a-zAW" secondAttribute="leading" id="5fE-77-Nvd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pfh-bb-VuC" secondAttribute="trailing" id="BON-nW-YB8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xqh-Rp-Hr5" secondAttribute="trailing" id="C9j-hF-UJ1"/>
+                                    <constraint firstItem="Pfh-bb-VuC" firstAttribute="leading" secondItem="IlX-hD-iBs" secondAttribute="leading" constant="20" symbolic="YES" id="TeA-6F-XuU"/>
+                                    <constraint firstItem="Xqh-Rp-Hr5" firstAttribute="leading" secondItem="IlX-hD-iBs" secondAttribute="leading" constant="20" symbolic="YES" id="yvJ-Cd-H7W"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -172,7 +185,9 @@
                     <navigationItem key="navigationItem" id="20I-00-Ecc"/>
                     <connections>
                         <outlet property="addImageButton" destination="rtt-NA-7Hr" id="jQE-8D-gY1"/>
+                        <outlet property="dropFlipSegmentedControl" destination="Pfh-bb-VuC" id="JSe-20-1Sq"/>
                         <outlet property="imageView" destination="ZQi-9a-zAW" id="qB0-Ay-sop"/>
+                        <outlet property="photoNameTextField" destination="Xqh-Rp-Hr5" id="j8Q-Bf-dUJ"/>
                         <outlet property="photoNoteText" destination="zdp-rY-NxD" id="z9e-3z-s5g"/>
                     </connections>
                 </viewController>
@@ -180,15 +195,48 @@
             </objects>
             <point key="canvasLocation" x="3879.7101449275365" y="923.4375"/>
         </scene>
-        <!--PhotoDetail-->
-        <scene sceneID="Z6S-oD-8dU">
+        <!--Collection Name View Controller-->
+        <scene sceneID="NAg-Va-XaT">
             <objects>
-                <viewControllerPlaceholder storyboardName="PhotoDetail" id="CzU-Te-Hri" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="U63-uF-Hfc"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i4Q-8j-imQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="Egi-EQ-Red" customClass="CollectionNameViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ums-dm-dSv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Your PhotoNote to a Collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-p0-Xt1">
+                                <rect key="frame" x="20" y="121" width="335" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j25-gf-BIy">
+                                <rect key="frame" x="20" y="165" width="374" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMh-dR-Quf">
+                                <rect key="frame" x="20" y="480" width="321" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Want to Create A New Collection?"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Collection Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-g7-wGT">
+                                <rect key="frame" x="20" y="536" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VHg-fw-cSt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fv0-JO-kre"/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwg-tP-zqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4705" y="1077"/>
+            <point key="canvasLocation" x="4869.5652173913049" y="922.76785714285711"/>
         </scene>
         <!--Skip-->
         <scene sceneID="Z8P-q6-o8p">
