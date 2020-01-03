@@ -12,7 +12,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Item-->
+        <!--Add Photo View Controller-->
         <scene sceneID="5v6-ru-Afw">
             <objects>
                 <viewController id="8n9-14-J1L" customClass="AddPhotoViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,22 +21,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-hD-iBs">
-                                <rect key="frame" x="56" y="128" width="302" height="655"/>
+                                <rect key="frame" x="56" y="128" width="302" height="604"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pfh-bb-VuC">
-                                        <rect key="frame" x="20" y="0.0" width="282" height="32"/>
-                                        <segments>
-                                            <segment title="Drop"/>
-                                            <segment title="Flip"/>
-                                        </segments>
-                                    </segmentedControl>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Photo Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Xqh-Rp-Hr5">
-                                        <rect key="frame" x="20" y="51" width="282" height="34"/>
+                                        <rect key="frame" x="20" y="0.0" width="282" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-9a-zAW">
-                                        <rect key="frame" x="2" y="105.5" width="300" height="298"/>
+                                        <rect key="frame" x="2" y="54.5" width="300" height="298"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="0.18098041373239437" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -45,7 +38,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-NA-7Hr">
-                                        <rect key="frame" x="228" y="425" width="74" height="40"/>
+                                        <rect key="frame" x="228" y="374" width="74" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="T8v-Qk-SXw"/>
@@ -58,7 +51,7 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add Note to Photo" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zdp-rY-NxD">
-                                        <rect key="frame" x="2" y="485" width="300" height="120"/>
+                                        <rect key="frame" x="2" y="434" width="300" height="120"/>
                                         <color key="backgroundColor" red="0.93289887565405261" green="0.93289887565405261" blue="0.93289887565405261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="cmf-KG-Jcy"/>
@@ -68,7 +61,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTi-uF-QcH">
-                                        <rect key="frame" x="240" y="625" width="62" height="30"/>
+                                        <rect key="frame" x="240" y="574" width="62" height="30"/>
                                         <state key="normal" title="Continue"/>
                                         <connections>
                                             <action selector="continueButtonTapped:" destination="8n9-14-J1L" eventType="touchUpInside" id="4f4-Ck-g8W"/>
@@ -79,9 +72,7 @@
                                 <constraints>
                                     <constraint firstItem="zdp-rY-NxD" firstAttribute="leading" secondItem="IlX-hD-iBs" secondAttribute="leading" constant="2" id="39g-9c-eaW"/>
                                     <constraint firstItem="zdp-rY-NxD" firstAttribute="leading" secondItem="ZQi-9a-zAW" secondAttribute="leading" id="5fE-77-Nvd"/>
-                                    <constraint firstAttribute="trailing" secondItem="Pfh-bb-VuC" secondAttribute="trailing" id="BON-nW-YB8"/>
                                     <constraint firstAttribute="trailing" secondItem="Xqh-Rp-Hr5" secondAttribute="trailing" id="C9j-hF-UJ1"/>
-                                    <constraint firstItem="Pfh-bb-VuC" firstAttribute="leading" secondItem="IlX-hD-iBs" secondAttribute="leading" constant="20" symbolic="YES" id="TeA-6F-XuU"/>
                                     <constraint firstItem="Xqh-Rp-Hr5" firstAttribute="leading" secondItem="IlX-hD-iBs" secondAttribute="leading" constant="20" symbolic="YES" id="yvJ-Cd-H7W"/>
                                 </constraints>
                             </stackView>
@@ -93,11 +84,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KRy-7f-t7e"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="JNV-pt-Hho"/>
                     <navigationItem key="navigationItem" id="20I-00-Ecc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addImageButton" destination="rtt-NA-7Hr" id="jQE-8D-gY1"/>
-                        <outlet property="dropFlipSegmentedControl" destination="Pfh-bb-VuC" id="JSe-20-1Sq"/>
                         <outlet property="imageView" destination="ZQi-9a-zAW" id="qB0-Ay-sop"/>
                         <outlet property="photoNameTextField" destination="Xqh-Rp-Hr5" id="j8Q-Bf-dUJ"/>
                         <outlet property="photoNoteText" destination="zdp-rY-NxD" id="z9e-3z-s5g"/>
@@ -105,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRh-cK-E4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3879.7101449275365" y="923.4375"/>
+            <point key="canvasLocation" x="3880" y="885"/>
         </scene>
         <!--Collection Name View Controller-->
         <scene sceneID="NAg-Va-XaT">
@@ -178,15 +168,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bwg-tP-zqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4869.5652173913049" y="922.76785714285711"/>
+            <point key="canvasLocation" x="4728" y="885"/>
         </scene>
-        <!--Skip-->
+        <!--Item-->
         <scene sceneID="Z8P-q6-o8p">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9AT-J0-q6c" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Skip" id="3dH-yM-Jhs"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="lBE-fx-CHR"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Ddp-js-opW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -228,7 +219,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gr0-h0-4K3">
                                         <rect key="frame" x="67" y="93" width="240" height="60"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.94288077849999996" green="1" blue="0.1243603922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Q5a-es-qPS"/>
                                             <constraint firstAttribute="width" constant="240" id="Z0g-mr-2vi"/>
@@ -238,7 +229,7 @@
                                             <color key="titleColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="8n9-14-J1L" kind="show" id="r1t-cU-arV"/>
+                                            <segue destination="8n9-14-J1L" kind="show" id="PlZ-jt-ebi"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -266,30 +257,9 @@
             </objects>
             <point key="canvasLocation" x="3879.7101449275365" y="142.63392857142856"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="33w-C2-DjE">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xB2-KV-00W" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ret-Xh-Rgy">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="8n9-14-J1L" kind="relationship" relationship="viewControllers" id="3ZN-2b-B3d"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ocx-Fw-Azt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3001" y="924"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Image" width="62.5" height="54"/>
         <image name="camera" catalog="system" width="64" height="48"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="r1t-cU-arV"/>
-    </inferredMetricsTieBreakers>
 </document>
