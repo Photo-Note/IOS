@@ -15,7 +15,7 @@ class AddPhotoViewController: UIViewController {
     @IBOutlet weak var photoNoteText: UITextView!
     
     var imagePicker: ImagePicker!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
