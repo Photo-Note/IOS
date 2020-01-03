@@ -12,6 +12,7 @@
 		856E26BC23BE8510003FB408 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E26BB23BE8510003FB408 /* AddPhotoViewController.swift */; };
 		856E26BE23BE94DF003FB408 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E26BD23BE94DF003FB408 /* ImagePicker.swift */; };
 		85D5F1C923BFB40000687A35 /* RockSalt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85D5F1C823BFB40000687A35 /* RockSalt-Regular.ttf */; };
+		85D5F1CB23BFC42D00687A35 /* CollectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D5F1CA23BFC42D00687A35 /* CollectionsTableViewController.swift */; };
 		85FB731023BE753E00A7BA0B /* TutorialStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */; };
 		A23132E123BEE42300356D35 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23132E023BEE42300356D35 /* PhotoDetailViewController.swift */; };
 		A23316F823BEBBC400004D74 /* PhotoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23316F723BEBBC400004D74 /* PhotoDetail.storyboard */; };
@@ -40,6 +41,7 @@
 		856E26BB23BE8510003FB408 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddPhotoViewController.swift; path = PhotoNote/AddPhotoViewController.swift; sourceTree = SOURCE_ROOT; };
 		856E26BD23BE94DF003FB408 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = PhotoNote/ImagePicker.swift; sourceTree = SOURCE_ROOT; };
 		85D5F1C823BFB40000687A35 /* RockSalt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RockSalt-Regular.ttf"; sourceTree = "<group>"; };
+		85D5F1CA23BFC42D00687A35 /* CollectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsTableViewController.swift; sourceTree = "<group>"; };
 		85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepThreeViewController.swift; path = PhotoNote/TutorialStepThreeViewController.swift; sourceTree = SOURCE_ROOT; };
 		8FA481BCB60422E1EB76616E /* Pods-PhotoNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoNote.release.xcconfig"; path = "Target Support Files/Pods-PhotoNote/Pods-PhotoNote.release.xcconfig"; sourceTree = "<group>"; };
 		A23132E023BEE42300356D35 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoDetailViewController.swift; path = PhotoNote/Storyboards/PhotoDetailViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -160,6 +162,7 @@
 				856E26BB23BE8510003FB408 /* AddPhotoViewController.swift */,
 				A23132E023BEE42300356D35 /* PhotoDetailViewController.swift */,
 				8554B7B423BF4C11005BC3B4 /* CollectionNameViewController.swift */,
+				85D5F1CA23BFC42D00687A35 /* CollectionsTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				A2B2737F23BE704A008451B0 /* Model+Convenience.swift in Sources */,
 				A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */,
 				8554B7B523BF4C11005BC3B4 /* CollectionNameViewController.swift in Sources */,
+				85D5F1CB23BFC42D00687A35 /* CollectionsTableViewController.swift in Sources */,
 				A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */,
 				DD9DD59B23BE5D200007508B /* FIrestoreAPI.swift in Sources */,
 				A23132E123BEE42300356D35 /* PhotoDetailViewController.swift in Sources */,
