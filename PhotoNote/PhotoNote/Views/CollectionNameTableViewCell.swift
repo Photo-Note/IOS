@@ -11,7 +11,7 @@ import UIKit
 class CollectionNameTableViewCell: UITableViewCell {
 
     // Here we need to pull the collectionName from the photo at this indexPath and assign the photo's collectionName
-    // Add toggle checkmark to assign/remove the collectionName to the photo before saving
+    // Add toggle checkmark to assign/remove the collectionName to the photo before saving?
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
