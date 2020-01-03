@@ -20,6 +20,7 @@
 		A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */; };
 		A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737C23BE6FD4008451B0 /* PhotoRepresentation.swift */; };
 		A2B2737F23BE704A008451B0 /* Model+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737E23BE704A008451B0 /* Model+Convenience.swift */; };
+		A2F8FD2623BF9F2C00E63A0C /* PhotoCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F8FD2523BF9F2C00E63A0C /* PhotoCollectionViewController.storyboard */; };
 		DD9DD58223BE58060007508B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DD58123BE58060007508B /* AppDelegate.swift */; };
 		DD9DD58423BE58060007508B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9DD58323BE58060007508B /* SceneDelegate.swift */; };
 		DD9DD58923BE58060007508B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9DD58723BE58060007508B /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		A2B2737C23BE6FD4008451B0 /* PhotoRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepresentation.swift; sourceTree = "<group>"; };
 		A2B2737E23BE704A008451B0 /* Model+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Convenience.swift"; sourceTree = "<group>"; };
+		A2F8FD2523BF9F2C00E63A0C /* PhotoCollectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoCollectionViewController.storyboard; sourceTree = "<group>"; };
 		DD9DD57E23BE58060007508B /* PhotoNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9DD58123BE58060007508B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD9DD58323BE58060007508B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				DD9DD58723BE58060007508B /* Main.storyboard */,
 				DDC2EF1723BEDD7E00DFD034 /* PhotoCustomization.storyboard */,
 				A23316F723BEBBC400004D74 /* PhotoDetail.storyboard */,
+				A2F8FD2523BF9F2C00E63A0C /* PhotoCollectionViewController.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				DDC2EF1823BEDD7E00DFD034 /* PhotoCustomization.storyboard in Resources */,
 				DD9DD59D23BE67140007508B /* GoogleService-Info.plist in Resources */,
 				DD9DD58B23BE58070007508B /* Assets.xcassets in Resources */,
+				A2F8FD2623BF9F2C00E63A0C /* PhotoCollectionViewController.storyboard in Resources */,
 				DD9DD58923BE58060007508B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
