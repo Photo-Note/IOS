@@ -11,6 +11,7 @@ import UIKit
 class AddPhotoViewController: UIViewController {
     
     var photoNote: Photo?
+    var photoNoteRep: PhotoRepresentation?
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var addImageButton: UIButton!
@@ -42,6 +43,25 @@ class AddPhotoViewController: UIViewController {
     
     @IBAction func showImagePicker(_ sender: UIButton) {
          self.imagePicker.present(from: sender)
+    }
+    
+    @IBAction func continueButtonTapped(_ sender: UIButton) {
+        guard let image = imageView.image,
+            let note = photoNoteText.text,
+            let name = photoNameTextField.text,
+            !name.isEmpty else { return }
+        
+        
+        
+        photoNoteRep = PhotoRepresentation(name: name, partner: nil, note: note, collectionName: nil, photo: image.pngData()!)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToCollectionNameSegue" {
+            guard let destinationVC = UIViewController() as? CollectionNameViewController else { return }
+            
+            destinationVC.photoNoteRep = self.photoNoteRep
+        }
     }
     
 }
