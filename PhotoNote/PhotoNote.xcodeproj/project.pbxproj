@@ -12,10 +12,7 @@
 		85EC9E8A23BE71B40020A2CD /* TutorialStepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC9E8923BE71B40020A2CD /* TutorialStepOneViewController.swift */; };
 		85FB730E23BE734500A7BA0B /* TutorialStepTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB730D23BE734500A7BA0B /* TutorialStepTwoViewController.swift */; };
 		85FB731023BE753E00A7BA0B /* TutorialStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */; };
-		A2B2737923BE6E31008451B0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737723BE6E31008451B0 /* Model.xcdatamodeld */; };
-		A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */; };
-		A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737C23BE6FD4008451B0 /* PhotoRepresentation.swift */; };
-		A2B2737F23BE704A008451B0 /* Model+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737E23BE704A008451B0 /* Model+Convenience.swift */; };
+		A23132E123BEE42300356D35 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23132E023BEE42300356D35 /* PhotoDetailViewController.swift */; };
 		A23316F823BEBBC400004D74 /* PhotoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23316F723BEBBC400004D74 /* PhotoDetail.storyboard */; };
 		A2B2737923BE6E31008451B0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737723BE6E31008451B0 /* Model.xcdatamodeld */; };
 		A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */; };
@@ -42,6 +39,7 @@
 		85FB730D23BE734500A7BA0B /* TutorialStepTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepTwoViewController.swift; path = PhotoNote/TutorialStepTwoViewController.swift; sourceTree = SOURCE_ROOT; };
 		85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepThreeViewController.swift; path = PhotoNote/TutorialStepThreeViewController.swift; sourceTree = SOURCE_ROOT; };
 		8FA481BCB60422E1EB76616E /* Pods-PhotoNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoNote.release.xcconfig"; path = "Target Support Files/Pods-PhotoNote/Pods-PhotoNote.release.xcconfig"; sourceTree = "<group>"; };
+		A23132E023BEE42300356D35 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoDetailViewController.swift; path = PhotoNote/Storyboards/PhotoDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		A23316F723BEBBC400004D74 /* PhotoDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoDetail.storyboard; sourceTree = "<group>"; };
 		A2B2737823BE6E31008451B0 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		A2B2737A23BE6F7F008451B0 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -139,6 +137,7 @@
 				85FB730D23BE734500A7BA0B /* TutorialStepTwoViewController.swift */,
 				85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */,
 				856E26BB23BE8510003FB408 /* AddPhotoViewController.swift */,
+				A23132E023BEE42300356D35 /* PhotoDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -310,6 +309,7 @@
 				A2B2737B23BE6F7F008451B0 /* CoreDataStack.swift in Sources */,
 				A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */,
 				DD9DD59B23BE5D200007508B /* FIrestoreAPI.swift in Sources */,
+				A23132E123BEE42300356D35 /* PhotoDetailViewController.swift in Sources */,
 				85FB730E23BE734500A7BA0B /* TutorialStepTwoViewController.swift in Sources */,
 				DDC2EF1623BEDCB700DFD034 /* UimageExtension.swift in Sources */,
 				85FB731023BE753E00A7BA0B /* TutorialStepThreeViewController.swift in Sources */,
