@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="3879.7101449275365" y="923.4375"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--PhotoDetail-->
         <scene sceneID="Z6S-oD-8dU">
             <objects>
-                <viewControllerPlaceholder id="CzU-Te-Hri" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="PhotoDetail" id="CzU-Te-Hri" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="U63-uF-Hfc"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i4Q-8j-imQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
