@@ -51,9 +51,10 @@ class AddPhotoViewController: UIViewController {
             let name = photoNameTextField.text,
             !name.isEmpty else { return }
         
+// photoNoteRep = PhotoRepresentation(name: name, partner: nil, note: note, collectionName: nil, photo: image.pngData()!)
         
-        
-        photoNoteRep = PhotoRepresentation(name: name, partner: nil, note: note, collectionName: nil, photo: image.pngData()!)
+        // Tons of errors and 'autofixes' with the commented out line above brought us to the following line of code.  Not sure any of it will work, but here we are.
+//        photoNoteRep = PhotoRepresentation(photo: photoNote!.name!, name: photoNote?.name ?? nil, collectionName: "", partner: "", note: note)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

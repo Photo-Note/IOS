@@ -11,6 +11,7 @@ import UIKit
 class CollectionNameViewController: UIViewController {
     
     var photoNoteRep: PhotoRepresentation?
+    var photos: [PhotoRepresentation] = []
     
     @IBOutlet weak var collectionsTableView: UITableView!
     @IBOutlet weak var newCollectionNameTextField: UITextField!
@@ -42,10 +43,16 @@ class CollectionNameViewController: UIViewController {
 
 extension CollectionNameViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return photos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CollectionCell", for: indexPath) as?
+            CollectionNameTableViewCell else { return UITableViewCell() }
+        
+        let photo = photos[indexPath.row]
+        cell.textLabel?.text = photo.collectionName
+        
+        return cell
     }
 }
