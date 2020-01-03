@@ -15,7 +15,7 @@ class AddPhotoViewController: UIViewController {
     @IBOutlet weak var continueButton: UIButton!
     
     var imagePicker: ImagePicker!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +31,6 @@ class AddPhotoViewController: UIViewController {
 extension AddPhotoViewController: ImagePickerDelegate {
     func didSelect(image: UIImage?) {
         self.imageView.image = image
+        
     }
 }

@@ -13,6 +13,7 @@ import FirebaseFirestore
 
 class FIrestoreAPI {
     
+    static let fireBaseStoreAPI = FIrestoreAPI()
     static var user: User?
     let db = Firestore.firestore()
     
