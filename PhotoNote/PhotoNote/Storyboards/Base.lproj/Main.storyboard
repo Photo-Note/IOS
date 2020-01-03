@@ -1,106 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vYp-Q0-A1a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9AT-J0-q6c">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="RockSalt-Regular.ttf">
+            <string>RockSalt-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Tutorial Step One View Controller-->
-        <scene sceneID="ava-N2-ccp">
-            <objects>
-                <viewController id="Za5-fL-OLd" customClass="TutorialStepOneViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9Jn-59-tHY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take/Upload Photo Step One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBY-ga-T21">
-                                <rect key="frame" x="96.5" y="393.5" width="221" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="IBY-ga-T21" firstAttribute="centerY" secondItem="9Jn-59-tHY" secondAttribute="centerY" id="EyE-sI-1FV"/>
-                            <constraint firstItem="IBY-ga-T21" firstAttribute="centerX" secondItem="9Jn-59-tHY" secondAttribute="centerX" id="vy4-Ak-q2Q"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="7Eu-ru-6aa"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Tdr-I2-Xvd" appends="YES" id="Cgg-nk-12e"/>
-                        </connections>
-                    </view>
-                    <navigationItem key="navigationItem" id="YKR-Px-bfZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9sU-bH-I7M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="Tdr-I2-Xvd">
-                    <connections>
-                        <segue destination="www-yQ-9zq" kind="push" id="SgU-N1-k8I"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="2228" y="143"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="ygq-tw-BiV">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vYp-Q0-A1a" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rw2-dy-OK3">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="9AT-J0-q6c" kind="relationship" relationship="viewControllers" id="3Lp-aN-OnW"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H5Q-JH-QZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="405.79710144927537" y="142.63392857142856"/>
-        </scene>
-        <!--Tutorial Step Two View Controller-->
-        <scene sceneID="HX6-U3-BYz">
-            <objects>
-                <viewController wantsFullScreenLayout="YES" modalTransitionStyle="flipHorizontal" id="www-yQ-9zq" customClass="TutorialStepTwoViewController" customModule="PhotoNote" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NJm-n6-CwE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe Down or Left Step Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNe-HZ-dtC">
-                                <rect key="frame" x="94.5" y="437.5" width="225" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="GNe-HZ-dtC" firstAttribute="centerY" secondItem="NJm-n6-CwE" secondAttribute="centerY" id="5Iy-hd-nYN"/>
-                            <constraint firstItem="GNe-HZ-dtC" firstAttribute="centerX" secondItem="NJm-n6-CwE" secondAttribute="centerX" id="Hu4-Su-lLn"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ddc-Ou-SND"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="tVG-bW-Ke0" appends="YES" id="RhZ-6U-Jbs"/>
-                        </connections>
-                    </view>
-                    <navigationItem key="navigationItem" id="4je-gL-nfe"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kP4-UW-YTs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="tVG-bW-Ke0">
-                    <connections>
-                        <segue destination="u0n-ed-N7W" kind="show" id="DM6-cY-p03"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="3046" y="143"/>
-        </scene>
         <!--Item-->
         <scene sceneID="5v6-ru-Afw">
             <objects>
@@ -110,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-hD-iBs">
-                                <rect key="frame" x="56" y="84" width="302" height="655"/>
+                                <rect key="frame" x="56" y="128" width="302" height="655"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pfh-bb-VuC">
                                         <rect key="frame" x="20" y="0.0" width="282" height="32"/>
@@ -204,45 +115,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Your PhotoNote to a Collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-p0-Xt1">
-                                <rect key="frame" x="20" y="121" width="335" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j25-gf-BIy">
-                                <rect key="frame" x="20" y="165" width="374" height="252"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollectionCell" id="Yd3-Bz-qOZ" customClass="CollectionCell">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yd3-Bz-qOZ" id="Qsj-tR-BaJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMh-dR-Quf">
-                                <rect key="frame" x="20" y="480" width="321" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Want to Create A New Collection?"/>
-                                <connections>
-                                    <action selector="createNewCollection:" destination="Egi-EQ-Red" eventType="touchUpInside" id="WhF-kn-A2j"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Collection Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-g7-wGT">
-                                <rect key="frame" x="20" y="536" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="JZR-cc-drC">
+                                <rect key="frame" x="20" y="165" width="374" height="360.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Your PhotoNote to a Collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-p0-Xt1">
+                                        <rect key="frame" x="0.0" y="0.0" width="334.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j25-gf-BIy">
+                                        <rect key="frame" x="0.0" y="58.5" width="374" height="159"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollectionCell" id="Yd3-Bz-qOZ" customClass="CollectionCell">
+                                                <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yd3-Bz-qOZ" id="Qsj-tR-BaJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMh-dR-Quf">
+                                        <rect key="frame" x="0.0" y="249.5" width="321" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Want to Create A New Collection?"/>
+                                        <connections>
+                                            <action selector="createNewCollection:" destination="Egi-EQ-Red" eventType="touchUpInside" id="WhF-kn-A2j"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Collection Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-g7-wGT">
+                                        <rect key="frame" x="0.0" y="320.5" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="w2X-u2-p8s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="b8e-g7-wGT" secondAttribute="trailing" id="dOf-uV-SXa"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JZR-cc-drC" firstAttribute="trailing" secondItem="Ums-dm-dSv" secondAttribute="trailingMargin" id="Hx7-Vi-tnG"/>
+                            <constraint firstItem="VHg-fw-cSt" firstAttribute="bottom" secondItem="JZR-cc-drC" secondAttribute="bottom" constant="287.5" id="YIW-0n-cFb"/>
+                            <constraint firstItem="JZR-cc-drC" firstAttribute="top" secondItem="VHg-fw-cSt" secondAttribute="top" constant="33" id="fqx-YV-f4N"/>
+                            <constraint firstItem="JZR-cc-drC" firstAttribute="leading" secondItem="Ums-dm-dSv" secondAttribute="leadingMargin" id="jHV-2q-r9q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VHg-fw-cSt"/>
                     </view>
                     <navigationItem key="navigationItem" id="Fv0-JO-kre"/>
@@ -270,12 +194,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Za5-fL-OLd" kind="relationship" relationship="rootViewController" id="Dei-tK-cN9"/>
+                        <segue destination="u0n-ed-N7W" kind="relationship" relationship="rootViewController" id="fLT-nc-aWO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zey-Fv-3Ml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1314.4927536231885" y="142.63392857142856"/>
+            <point key="canvasLocation" x="3080" y="143"/>
         </scene>
         <!--Tutorial Step Three View Controller-->
         <scene sceneID="S3b-qg-wMN">
@@ -285,26 +209,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add, Edit, and Save! Step 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhV-9B-Cvc">
-                                <rect key="frame" x="103" y="437.5" width="208" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gr0-h0-4K3">
-                                <rect key="frame" x="137" y="502" width="140" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create a PhotoNote!"/>
-                                <connections>
-                                    <segue destination="8n9-14-J1L" kind="show" id="r1t-cU-arV"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="j0T-me-7yH">
+                                <rect key="frame" x="20" y="371.5" width="374" height="153"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ufA-EP-icq">
+                                        <rect key="frame" x="20" y="0.0" width="334" height="71"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="3ki-2V-UGc">
+                                                <rect key="frame" x="0.0" y="8.5" width="137.5" height="54"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PhotoNote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYo-D2-Ed5">
+                                                <rect key="frame" x="137.5" y="0.0" width="196.5" height="71"/>
+                                                <fontDescription key="fontDescription" name="RockSalt-Regular" family="Rock Salt" pointSize="30"/>
+                                                <color key="textColor" red="0.94288077849538288" green="1" blue="0.12436039219760853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gr0-h0-4K3">
+                                        <rect key="frame" x="67" y="93" width="240" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Q5a-es-qPS"/>
+                                            <constraint firstAttribute="width" constant="240" id="Z0g-mr-2vi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Create a PhotoNote!">
+                                            <color key="titleColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="8n9-14-J1L" kind="show" id="r1t-cU-arV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ufA-EP-icq" secondAttribute="trailing" constant="20" symbolic="YES" id="is4-9v-flc"/>
+                                    <constraint firstItem="ufA-EP-icq" firstAttribute="leading" secondItem="j0T-me-7yH" secondAttribute="leading" constant="20" symbolic="YES" id="s9w-MU-f5v"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="jhV-9B-Cvc" firstAttribute="centerY" secondItem="GTM-Ym-SIi" secondAttribute="centerY" id="fI5-V6-cEM"/>
-                            <constraint firstItem="jhV-9B-Cvc" firstAttribute="centerX" secondItem="GTM-Ym-SIi" secondAttribute="centerX" id="gny-ye-cEg"/>
+                            <constraint firstItem="j0T-me-7yH" firstAttribute="centerY" secondItem="GTM-Ym-SIi" secondAttribute="centerY" id="Be2-yf-tSa"/>
+                            <constraint firstItem="j0T-me-7yH" firstAttribute="leading" secondItem="c4C-et-YmU" secondAttribute="leading" constant="20" id="DDj-HQ-pyg"/>
+                            <constraint firstItem="j0T-me-7yH" firstAttribute="centerX" secondItem="GTM-Ym-SIi" secondAttribute="centerX" id="KjA-mg-Fdu"/>
+                            <constraint firstItem="c4C-et-YmU" firstAttribute="trailing" secondItem="j0T-me-7yH" secondAttribute="trailing" constant="20" id="ska-gF-IH0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c4C-et-YmU"/>
                     </view>
@@ -314,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHG-sQ-J5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3881" y="143"/>
+            <point key="canvasLocation" x="3879.7101449275365" y="142.63392857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="33w-C2-DjE">
@@ -336,9 +286,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="62.5" height="54"/>
         <image name="camera" catalog="system" width="64" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3ZN-2b-B3d"/>
+        <segue reference="r1t-cU-arV"/>
     </inferredMetricsTieBreakers>
 </document>
