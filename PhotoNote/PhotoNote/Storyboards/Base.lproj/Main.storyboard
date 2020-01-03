@@ -31,15 +31,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-hD-iBs">
-                                <rect key="frame" x="56" y="128" width="302" height="604"/>
+                                <rect key="frame" x="56" y="128" width="302" height="610"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Photo Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Xqh-Rp-Hr5">
-                                        <rect key="frame" x="20" y="0.0" width="282" height="34"/>
+                                        <rect key="frame" x="20" y="0.0" width="282" height="40"/>
+                                        <color key="backgroundColor" red="0.93289887569999996" green="0.93289887569999996" blue="0.93289887569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="gfv-v1-2FV"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-9a-zAW">
-                                        <rect key="frame" x="2" y="54.5" width="300" height="298"/>
+                                        <rect key="frame" x="2" y="60.5" width="300" height="298"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="0.18098041373239437" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -48,7 +53,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-NA-7Hr">
-                                        <rect key="frame" x="228" y="374" width="74" height="40"/>
+                                        <rect key="frame" x="228" y="380" width="74" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="T8v-Qk-SXw"/>
@@ -61,17 +66,17 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add Note to Photo" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zdp-rY-NxD">
-                                        <rect key="frame" x="2" y="434" width="300" height="120"/>
+                                        <rect key="frame" x="2" y="440" width="300" height="120"/>
                                         <color key="backgroundColor" red="0.93289887565405261" green="0.93289887565405261" blue="0.93289887565405261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="cmf-KG-Jcy"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTi-uF-QcH">
-                                        <rect key="frame" x="240" y="574" width="62" height="30"/>
+                                        <rect key="frame" x="240" y="580" width="62" height="30"/>
                                         <state key="normal" title="Continue"/>
                                         <connections>
                                             <action selector="continueButtonTapped:" destination="8n9-14-J1L" eventType="touchUpInside" id="4f4-Ck-g8W"/>
@@ -116,18 +121,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="JZR-cc-drC">
-                                <rect key="frame" x="20" y="165" width="374" height="360.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JZR-cc-drC">
+                                <rect key="frame" x="20" y="165" width="374" height="628"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Your PhotoNote to a Collection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-p0-Xt1">
-                                        <rect key="frame" x="0.0" y="0.0" width="334.5" height="26.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Your PhotoNote to a Collection" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgg-p0-Xt1">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="35.5"/>
+                                        <fontDescription key="fontDescription" name="RockSalt-Regular" family="Rock Salt" pointSize="15"/>
+                                        <color key="textColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j25-gf-BIy">
-                                        <rect key="frame" x="0.0" y="58.5" width="374" height="159"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j25-gf-BIy">
+                                        <rect key="frame" x="0.0" y="106.5" width="374" height="300"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="tHd-N2-p1A"/>
+                                        </constraints>
+                                        <color key="sectionIndexBackgroundColor" red="0.93289887569999996" green="0.93289887569999996" blue="0.93289887569999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollectionCell" id="Yd3-Bz-qOZ" customClass="CollectionCell">
                                                 <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
@@ -140,37 +149,46 @@
                                         </prototypes>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMh-dR-Quf">
-                                        <rect key="frame" x="0.0" y="249.5" width="321" height="39"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title="Want to Create A New Collection?"/>
+                                        <rect key="frame" x="0.0" y="477" width="374" height="40"/>
+                                        <color key="backgroundColor" red="0.94288077849999996" green="1" blue="0.1243603922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Q8a-NK-FbY"/>
+                                            <constraint firstAttribute="width" constant="300" id="Yp5-pf-1Cs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RockSalt-Regular" family="Rock Salt" pointSize="17"/>
+                                        <state key="normal" title="+ Create A New Collection">
+                                            <color key="titleColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="createNewCollection:" destination="Egi-EQ-Red" eventType="touchUpInside" id="WhF-kn-A2j"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Collection Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-g7-wGT">
-                                        <rect key="frame" x="0.0" y="320.5" width="374" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Collection Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-g7-wGT">
+                                        <rect key="frame" x="0.0" y="588" width="374" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="w2X-u2-p8s"/>
+                                            <constraint firstAttribute="height" constant="40" id="eju-0g-kch"/>
                                         </constraints>
+                                        <color key="textColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="kgg-p0-Xt1" firstAttribute="leading" secondItem="JZR-cc-drC" secondAttribute="leading" id="K7o-I5-PhK"/>
                                     <constraint firstAttribute="trailing" secondItem="b8e-g7-wGT" secondAttribute="trailing" id="dOf-uV-SXa"/>
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="JZR-cc-drC" firstAttribute="trailing" secondItem="Ums-dm-dSv" secondAttribute="trailingMargin" id="Hx7-Vi-tnG"/>
-                            <constraint firstItem="VHg-fw-cSt" firstAttribute="bottom" secondItem="JZR-cc-drC" secondAttribute="bottom" constant="287.5" id="YIW-0n-cFb"/>
+                            <constraint firstItem="VHg-fw-cSt" firstAttribute="bottom" secondItem="JZR-cc-drC" secondAttribute="bottom" constant="20" id="YIW-0n-cFb"/>
                             <constraint firstItem="JZR-cc-drC" firstAttribute="top" secondItem="VHg-fw-cSt" secondAttribute="top" constant="33" id="fqx-YV-f4N"/>
                             <constraint firstItem="JZR-cc-drC" firstAttribute="leading" secondItem="Ums-dm-dSv" secondAttribute="leadingMargin" id="jHV-2q-r9q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VHg-fw-cSt"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gXA-uY-nuW"/>
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="collectionsTableView" destination="j25-gf-BIy" id="4ba-tK-TXo"/>
@@ -246,11 +264,11 @@
             </objects>
             <point key="canvasLocation" x="5700" y="142.63392857142856"/>
         </scene>
-        <!--Take Photo-->
+        <!--Add Photo-->
         <scene sceneID="L5u-sU-6Wc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="957-mo-pWI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Take Photo" image="camera" catalog="system" id="bjk-Eg-AdI"/>
+                    <tabBarItem key="tabBarItem" title="Add Photo" image="camera" catalog="system" id="bjk-Eg-AdI"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GQU-Zz-2xc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -272,7 +290,9 @@
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fss-Rm-tNW">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.94288077849999996" green="1" blue="0.1243603922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="957-mo-pWI" kind="relationship" relationship="viewControllers" id="wPm-Vx-7xh"/>
