@@ -24,6 +24,7 @@ class FIrestoreAPI {
             }
             FIrestoreAPI.user = authResult?.user
         }
+
     }
     
     func register(withEmail email: String, password: String){
@@ -90,6 +91,16 @@ class FIrestoreAPI {
         db.collection("users").getDocuments { (querySnapshot, error) in
             if let error = error as NSError? {
                 NSLog("failed to retreive profile: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func addPhoto(){
+        db.collection("pictures").addDocument(data: [
+            "gluedURL": "","" : ""
+            ]) { (error) in
+            if let error = error as NSError? {
+                NSLog("failed to add image urls to firestore: \(error.localizedDescription)")
             }
         }
     }
