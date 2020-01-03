@@ -11,8 +11,7 @@
 		8554B7B723BF81E0005BC3B4 /* CollectionNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554B7B623BF81E0005BC3B4 /* CollectionNameTableViewCell.swift */; };
 		856E26BC23BE8510003FB408 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E26BB23BE8510003FB408 /* AddPhotoViewController.swift */; };
 		856E26BE23BE94DF003FB408 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E26BD23BE94DF003FB408 /* ImagePicker.swift */; };
-		85EC9E8A23BE71B40020A2CD /* TutorialStepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC9E8923BE71B40020A2CD /* TutorialStepOneViewController.swift */; };
-		85FB730E23BE734500A7BA0B /* TutorialStepTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB730D23BE734500A7BA0B /* TutorialStepTwoViewController.swift */; };
+		85D5F1C923BFB40000687A35 /* RockSalt-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85D5F1C823BFB40000687A35 /* RockSalt-Regular.ttf */; };
 		85FB731023BE753E00A7BA0B /* TutorialStepThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */; };
 		A23132E123BEE42300356D35 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23132E023BEE42300356D35 /* PhotoDetailViewController.swift */; };
 		A23316F823BEBBC400004D74 /* PhotoDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23316F723BEBBC400004D74 /* PhotoDetail.storyboard */; };
@@ -40,8 +39,7 @@
 		8554B7B623BF81E0005BC3B4 /* CollectionNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNameTableViewCell.swift; sourceTree = "<group>"; };
 		856E26BB23BE8510003FB408 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddPhotoViewController.swift; path = PhotoNote/AddPhotoViewController.swift; sourceTree = SOURCE_ROOT; };
 		856E26BD23BE94DF003FB408 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = PhotoNote/ImagePicker.swift; sourceTree = SOURCE_ROOT; };
-		85EC9E8923BE71B40020A2CD /* TutorialStepOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepOneViewController.swift; path = PhotoNote/TutorialStepOneViewController.swift; sourceTree = SOURCE_ROOT; };
-		85FB730D23BE734500A7BA0B /* TutorialStepTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepTwoViewController.swift; path = PhotoNote/TutorialStepTwoViewController.swift; sourceTree = SOURCE_ROOT; };
+		85D5F1C823BFB40000687A35 /* RockSalt-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RockSalt-Regular.ttf"; sourceTree = "<group>"; };
 		85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepThreeViewController.swift; path = PhotoNote/TutorialStepThreeViewController.swift; sourceTree = SOURCE_ROOT; };
 		8FA481BCB60422E1EB76616E /* Pods-PhotoNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoNote.release.xcconfig"; path = "Target Support Files/Pods-PhotoNote/Pods-PhotoNote.release.xcconfig"; sourceTree = "<group>"; };
 		A23132E023BEE42300356D35 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoDetailViewController.swift; path = PhotoNote/Storyboards/PhotoDetailViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -101,6 +99,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		85D5F1C423BFAC9200687A35 /* OLD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = OLD;
+			path = "PhotoNote/View Controllers/OLD";
+			sourceTree = "<group>";
+		};
 		DD9DD57523BE58060007508B = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +144,7 @@
 		DD9DD59523BE58290007508B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				85D5F1C823BFB40000687A35 /* RockSalt-Regular.ttf */,
 				DD9DD59C23BE67140007508B /* GoogleService-Info.plist */,
 				DD9DD58323BE58060007508B /* SceneDelegate.swift */,
 				DD9DD58123BE58060007508B /* AppDelegate.swift */,
@@ -148,8 +155,7 @@
 		DD9DD59623BE58350007508B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				85EC9E8923BE71B40020A2CD /* TutorialStepOneViewController.swift */,
-				85FB730D23BE734500A7BA0B /* TutorialStepTwoViewController.swift */,
+				85D5F1C423BFAC9200687A35 /* OLD */,
 				85FB730F23BE753E00A7BA0B /* TutorialStepThreeViewController.swift */,
 				856E26BB23BE8510003FB408 /* AddPhotoViewController.swift */,
 				A23132E023BEE42300356D35 /* PhotoDetailViewController.swift */,
@@ -260,6 +266,7 @@
 			files = (
 				A23316F823BEBBC400004D74 /* PhotoDetail.storyboard in Resources */,
 				DD9DD58E23BE58070007508B /* LaunchScreen.storyboard in Resources */,
+				85D5F1C923BFB40000687A35 /* RockSalt-Regular.ttf in Resources */,
 				DDC2EF1823BEDD7E00DFD034 /* PhotoCustomization.storyboard in Resources */,
 				DD9DD59D23BE67140007508B /* GoogleService-Info.plist in Resources */,
 				DD9DD58B23BE58070007508B /* Assets.xcassets in Resources */,
@@ -317,7 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85EC9E8A23BE71B40020A2CD /* TutorialStepOneViewController.swift in Sources */,
 				856E26BC23BE8510003FB408 /* AddPhotoViewController.swift in Sources */,
 				DD9DD58223BE58060007508B /* AppDelegate.swift in Sources */,
 				856E26BE23BE94DF003FB408 /* ImagePicker.swift in Sources */,
@@ -330,7 +336,6 @@
 				A2B2737D23BE6FD4008451B0 /* PhotoRepresentation.swift in Sources */,
 				DD9DD59B23BE5D200007508B /* FIrestoreAPI.swift in Sources */,
 				A23132E123BEE42300356D35 /* PhotoDetailViewController.swift in Sources */,
-				85FB730E23BE734500A7BA0B /* TutorialStepTwoViewController.swift in Sources */,
 				DDC2EF1623BEDCB700DFD034 /* UimageExtension.swift in Sources */,
 				85FB731023BE753E00A7BA0B /* TutorialStepThreeViewController.swift in Sources */,
 			);
