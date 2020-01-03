@@ -160,6 +160,7 @@
                                         <rect key="frame" x="240" y="625" width="62" height="30"/>
                                         <state key="normal" title="Continue"/>
                                         <connections>
+                                            <action selector="continueButtonTapped:" destination="8n9-14-J1L" eventType="touchUpInside" id="4f4-Ck-g8W"/>
                                             <segue destination="Egi-EQ-Red" kind="show" identifier="ToCollectionNameSegue" id="Zct-hw-NB3"/>
                                         </connections>
                                     </button>

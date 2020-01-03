@@ -9,6 +9,7 @@
 import Foundation
 
 struct PhotoRepresentation: Codable {
-    var photo, name, collectionName: String
-    var partner, note: String?
+    var name: String
+    var partner, note, collectionName: String?
+    var photo: Data
 }
