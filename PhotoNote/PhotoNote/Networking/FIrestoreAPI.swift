@@ -10,6 +10,7 @@ import Foundation
 import Firebase
 import FirebaseFirestoreSwift
 import FirebaseFirestore
+import UIKit
 
 class FIrestoreAPI {
     
@@ -95,9 +96,14 @@ class FIrestoreAPI {
         }
     }
     
-    func addPhoto(){
+    func uploadPhoto(withImage image: UIImage, title: String, note: String ){
+        
+        guard let imageData = image.jpegData(compressionQuality: 0.75) else { return }
+        
         db.collection("pictures").addDocument(data: [
-            "gluedURL": "","" : ""
+            "imageURL": "\(imageData).jpg",
+                                                     "title": title,
+                                                     "note": note
             ]) { (error) in
             if let error = error as NSError? {
                 NSLog("failed to add image urls to firestore: \(error.localizedDescription)")
