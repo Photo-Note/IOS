@@ -10,9 +10,6 @@ import UIKit
 
 class PhotoDetailViewController: UIViewController {
     
-    @IBOutlet weak var imageViewPhotoDetail: UIImageView!
-    @IBOutlet weak var dropOrFlipSegmentControl: UISegmentedControl!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

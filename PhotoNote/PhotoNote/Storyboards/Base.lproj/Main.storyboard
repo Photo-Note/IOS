@@ -215,12 +215,25 @@
                                 <rect key="frame" x="20" y="165" width="374" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollectionCell" id="Yd3-Bz-qOZ">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yd3-Bz-qOZ" id="Qsj-tR-BaJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMh-dR-Quf">
                                 <rect key="frame" x="20" y="480" width="321" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Want to Create A New Collection?"/>
+                                <connections>
+                                    <action selector="createNewCollection:" destination="Egi-EQ-Red" eventType="touchUpInside" id="WhF-kn-A2j"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Collection Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-g7-wGT">
                                 <rect key="frame" x="20" y="536" width="374" height="34"/>
@@ -234,6 +247,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fv0-JO-kre"/>
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="collectionsTableView" destination="j25-gf-BIy" id="4ba-tK-TXo"/>
+                        <outlet property="newCollectionNameTextField" destination="b8e-g7-wGT" id="tGF-MY-1fz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bwg-tP-zqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

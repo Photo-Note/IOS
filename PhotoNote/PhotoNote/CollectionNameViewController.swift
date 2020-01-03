@@ -9,11 +9,22 @@
 import UIKit
 
 class CollectionNameViewController: UIViewController {
+    
+    var photoNoteRep: PhotoRepresentation?
+    
+    @IBOutlet weak var collectionsTableView: UITableView!
+    @IBOutlet weak var newCollectionNameTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        newCollectionNameTextField.isHidden = true
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func createNewCollection(_ sender: UIButton) {
+        newCollectionNameTextField.isHidden = false
     }
     
 
@@ -27,4 +38,14 @@ class CollectionNameViewController: UIViewController {
     }
     */
 
+}
+
+extension CollectionNameViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
 }

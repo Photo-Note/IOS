@@ -57,7 +57,11 @@ class AddPhotoViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
+        if segue.identifier == "ToCollectionNameSegue" {
+            guard let destinationVC = UIViewController() as? CollectionNameViewController else { return }
+            
+            destinationVC.photoNoteRep = self.photoNoteRep
+        }
     }
     
 }
