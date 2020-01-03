@@ -12,7 +12,7 @@ class AddPhotoViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var addImageButton: UIButton!
-    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var photoNoteText: UITextView!
     
     var imagePicker: ImagePicker!
     
@@ -32,9 +32,14 @@ class AddPhotoViewController: UIViewController {
         }
     }
     
+    override func touchesBegan(_: Set<UITouch>, with: UIEvent?){
+        photoNoteText.resignFirstResponder()
+    }
+    
     @IBAction func showImagePicker(_ sender: UIButton) {
          self.imagePicker.present(from: sender)
     }
+    
 }
 
 extension AddPhotoViewController: ImagePickerDelegate {

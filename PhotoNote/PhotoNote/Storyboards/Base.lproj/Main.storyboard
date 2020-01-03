@@ -109,32 +109,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="vwk-j3-g03">
-                                <rect key="frame" x="10" y="64" width="394" height="729"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-hD-iBs">
+                                <rect key="frame" x="56" y="84" width="302" height="610"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-9a-zAW">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="451"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-9a-zAW">
+                                        <rect key="frame" x="2" y="0.5" width="300" height="298"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="0.18098041373239437" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="8nF-J4-Fsf"/>
+                                            <constraint firstAttribute="height" constant="300" id="MpO-eu-QXP"/>
+                                        </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtt-NA-7Hr">
-                                        <rect key="frame" x="0.0" y="491" width="394" height="168"/>
-                                        <state key="normal" title="Add Image"/>
+                                        <rect key="frame" x="228" y="340" width="74" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="T8v-Qk-SXw"/>
+                                        </constraints>
+                                        <state key="normal" title="Add Image">
+                                            <color key="titleColor" red="0.029521945859999999" green="0.26750943059999999" blue="0.42121779920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="showImagePicker:" destination="8n9-14-J1L" eventType="touchUpInside" id="MLN-9O-hdY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTi-uF-QcH">
-                                        <rect key="frame" x="0.0" y="699" width="394" height="30"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Add PhotoNote" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zdp-rY-NxD">
+                                        <rect key="frame" x="2" y="420" width="300" height="120"/>
+                                        <color key="backgroundColor" red="0.93289887565405261" green="0.93289887565405261" blue="0.93289887565405261" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="cmf-KG-Jcy"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTi-uF-QcH">
+                                        <rect key="frame" x="240" y="580" width="62" height="30"/>
                                         <state key="normal" title="Continue"/>
+                                        <connections>
+                                            <action selector="continueToCreateButtonTapped:" destination="8n9-14-J1L" eventType="touchUpInside" id="B7R-7I-2SU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="zdp-rY-NxD" firstAttribute="leading" secondItem="IlX-hD-iBs" secondAttribute="leading" constant="2" id="39g-9c-eaW"/>
+                                    <constraint firstItem="zdp-rY-NxD" firstAttribute="leading" secondItem="ZQi-9a-zAW" secondAttribute="leading" id="5fE-77-Nvd"/>
+                                </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vwk-j3-g03" firstAttribute="top" secondItem="KRy-7f-t7e" secondAttribute="top" constant="20" id="Kbd-kk-sbK"/>
-                            <constraint firstItem="KRy-7f-t7e" firstAttribute="bottom" secondItem="vwk-j3-g03" secondAttribute="bottom" constant="20" id="fhZ-Hv-gt8"/>
-                            <constraint firstItem="vwk-j3-g03" firstAttribute="leading" secondItem="KRy-7f-t7e" secondAttribute="leading" constant="10" id="svf-aC-j0H"/>
-                            <constraint firstItem="KRy-7f-t7e" firstAttribute="trailing" secondItem="vwk-j3-g03" secondAttribute="trailing" constant="10" id="zhO-ia-biw"/>
+                            <constraint firstItem="IlX-hD-iBs" firstAttribute="top" secondItem="KRy-7f-t7e" secondAttribute="top" constant="40" id="gG1-fq-XEL"/>
+                            <constraint firstItem="IlX-hD-iBs" firstAttribute="centerX" secondItem="0yk-cR-Yu0" secondAttribute="centerX" id="yXi-Ty-1eC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KRy-7f-t7e"/>
                     </view>
@@ -142,8 +169,8 @@
                     <navigationItem key="navigationItem" id="20I-00-Ecc"/>
                     <connections>
                         <outlet property="addImageButton" destination="rtt-NA-7Hr" id="jQE-8D-gY1"/>
-                        <outlet property="continueButton" destination="iTi-uF-QcH" id="f00-6t-xNB"/>
                         <outlet property="imageView" destination="ZQi-9a-zAW" id="qB0-Ay-sop"/>
+                        <outlet property="photoNoteText" destination="zdp-rY-NxD" id="z9e-3z-s5g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IRh-cK-E4Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -216,6 +243,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xB2-KV-00W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ret-Xh-Rgy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -228,6 +256,9 @@
             <point key="canvasLocation" x="3001" y="924"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="64" height="48"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3ZN-2b-B3d"/>
     </inferredMetricsTieBreakers>
