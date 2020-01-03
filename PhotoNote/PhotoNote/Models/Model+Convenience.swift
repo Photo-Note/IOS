@@ -10,12 +10,13 @@ import Foundation
 import CoreData
 
 extension Photo {
-    convenience init(name: String, photo: String, partner: String?, note: String?, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
+    convenience init(name: String, photo: String, collectionName: String, partner: String?, note: String?, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         
         self.init(context: context)
         
         self.name = name
         self.photo = photo
+        self.collectionName = collectionName
         self.partner = partner
         self.note = note
     }
