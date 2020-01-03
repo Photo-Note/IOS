@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8554B7B523BF4C11005BC3B4 /* CollectionNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554B7B423BF4C11005BC3B4 /* CollectionNameViewController.swift */; };
+		8554B7B723BF81E0005BC3B4 /* CollectionNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8554B7B623BF81E0005BC3B4 /* CollectionNameTableViewCell.swift */; };
 		856E26BC23BE8510003FB408 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E26BB23BE8510003FB408 /* AddPhotoViewController.swift */; };
 		856E26BE23BE94DF003FB408 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856E26BD23BE94DF003FB408 /* ImagePicker.swift */; };
 		85EC9E8A23BE71B40020A2CD /* TutorialStepOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EC9E8923BE71B40020A2CD /* TutorialStepOneViewController.swift */; };
@@ -35,6 +36,7 @@
 		11366E23EBC8726E94B454E3 /* Pods_PhotoNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12AD28CD6D94BFD46324B646 /* Pods-PhotoNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoNote.debug.xcconfig"; path = "Target Support Files/Pods-PhotoNote/Pods-PhotoNote.debug.xcconfig"; sourceTree = "<group>"; };
 		8554B7B423BF4C11005BC3B4 /* CollectionNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionNameViewController.swift; path = PhotoNote/CollectionNameViewController.swift; sourceTree = SOURCE_ROOT; };
+		8554B7B623BF81E0005BC3B4 /* CollectionNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionNameTableViewCell.swift; sourceTree = "<group>"; };
 		856E26BB23BE8510003FB408 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddPhotoViewController.swift; path = PhotoNote/AddPhotoViewController.swift; sourceTree = SOURCE_ROOT; };
 		856E26BD23BE94DF003FB408 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePicker.swift; path = PhotoNote/ImagePicker.swift; sourceTree = SOURCE_ROOT; };
 		85EC9E8923BE71B40020A2CD /* TutorialStepOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialStepOneViewController.swift; path = PhotoNote/TutorialStepOneViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -89,6 +91,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8554B7B823BF81E5005BC3B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8554B7B623BF81E0005BC3B4 /* CollectionNameTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DD9DD57523BE58060007508B = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 				DD9DD59623BE58350007508B /* View Controllers */,
 				DD9DD59523BE58290007508B /* Resources */,
 				DD9DD58A23BE58070007508B /* Assets.xcassets */,
+				8554B7B823BF81E5005BC3B4 /* Views */,
 			);
 			path = PhotoNote;
 			sourceTree = "<group>";
@@ -306,6 +317,7 @@
 				856E26BC23BE8510003FB408 /* AddPhotoViewController.swift in Sources */,
 				DD9DD58223BE58060007508B /* AppDelegate.swift in Sources */,
 				856E26BE23BE94DF003FB408 /* ImagePicker.swift in Sources */,
+				8554B7B723BF81E0005BC3B4 /* CollectionNameTableViewCell.swift in Sources */,
 				DD9DD58423BE58060007508B /* SceneDelegate.swift in Sources */,
 				A2B2737923BE6E31008451B0 /* Model.xcdatamodeld in Sources */,
 				A2B2737F23BE704A008451B0 /* Model+Convenience.swift in Sources */,
