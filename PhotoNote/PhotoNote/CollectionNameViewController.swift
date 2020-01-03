@@ -23,6 +23,10 @@ class CollectionNameViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func touchesBegan(_: Set<UITouch>, with: UIEvent?){
+        newCollectionNameTextField.resignFirstResponder()
+    }
+    
     
     @IBAction func createNewCollection(_ sender: UIButton) {
         newCollectionNameTextField.isHidden = false

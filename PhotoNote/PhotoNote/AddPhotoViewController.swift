@@ -47,6 +47,7 @@ class AddPhotoViewController: UIViewController {
     
     override func touchesBegan(_: Set<UITouch>, with: UIEvent?){
         photoNoteText.resignFirstResponder()
+        photoNameTextField.resignFirstResponder()
     }
     
     @IBAction func showImagePicker(_ sender: UIButton) {
